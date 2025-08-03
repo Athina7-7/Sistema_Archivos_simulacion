@@ -148,7 +148,7 @@ void listarDirectorio() {
 
 
 
-void mostrarInfoArchivo() {
+void mostrarTxtArchivo() {
     string ruta;
     cout << "Ingrese la ruta del archivo: ";
     getline(cin, ruta);

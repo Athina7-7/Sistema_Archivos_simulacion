@@ -3,7 +3,7 @@
 #include <fstream>               // Para leer y escribir archivos txt
 #include <filesystem>           // Permite crear, borrar, buscar y listar carpetas y archivos del sistema
 #include <string>               // Para manejar texto en el código
-
+#include "funciones.h"
 // En vez de escribir std::filesystem::exists(), lo renombramos con fs::exists()
 namespace fs = std::filesystem; 
 
@@ -29,34 +29,34 @@ int main(){
         cout << "Seleccione una opción: ";
         cin >> opcion;
         //Limpia el salto de línea que quedó
-        cin.ignore(); 
-
+        cout << "Se recibió la opción: " << opcion << endl;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
         
         
         switch (opcion){
         case 1:
-            // crearArchivo();
+            crearArchivo();
         break;
         case 2:
-            // eliminarArchivo();
+            eliminarArchivo();
         break;
         case 3: 
-            // crearDirectorio();
+            crearDirectorio();
         break;
         case 4: 
-            // eliminarDirectorio();
+            eliminarDirectorio();
         break;
         case 5: 
-            // escribirArchivo();
+            escribirArchivo();
         break;
         case 6: 
-            // leerArchivo();
+            leerArchivo();
         break;
         case 7: 
-            // listarDirectorio();
+            listarDirectorio();
         break;
         case 8:
-            // mostrarTxtArchivo();
+            mostrarTxtArchivo();
         break;
         case 9: 
             cout << "Finaliza el programa" << endl;

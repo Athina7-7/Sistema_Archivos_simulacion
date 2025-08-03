@@ -12,6 +12,6 @@ void eliminarDirectorio();
 void escribirArchivo();
 void leerArchivo();
 void listarDirectorio();
-void mostrarInfoArchivo();
+void mostrarTxtArchivo();
 
 #endif
